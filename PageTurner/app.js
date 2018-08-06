@@ -23,7 +23,7 @@ app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);  // Add catalog routes to middleware chain.
 app.use('/', indexRouter);
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://username:password@ds121341.mlab.com:21341/user_library';
+var mongoDB = 'mongodb://pranit:Pranit123@ds121341.mlab.com:21341/user_library';
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
